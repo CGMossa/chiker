@@ -14,7 +14,9 @@
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE",
-                "R_NO_REMAP"
+                "STRICT_R_HEADERS",
+                "R_NO_REMAP",
+                "R_NO_REMAP_RMATH"
             ],
             "windowsSdkVersion": "10.0.22000.0",
             "compilerPath": "cl.exe",

@@ -2,6 +2,11 @@
 
 This repository is to showcase extending R with some C code that uses R's C-facilities.
 
+In order to know what you can do, and what is possible, you need to consult
+the C-facilities; these are found in `R_HOME/include`.
+
+Generally, don't include `Rdefines.h`, add defines `STRICT_R_HEADERS`, `R_NO_REMAP`, `R_NO_REMAP_RMATH`.
+
 Package origins:
 
 ```r
@@ -31,7 +36,19 @@ VS Marketplace Link: <https://marketplace.visualstudio.com/items?itemName=ms-vsc
     },
 ```
 
-where I fill in my personal setting. Note where this is different in the file.
+where I fill in my personal setting. This is then used in several places,
+for isntance
+
+```json
+"includePath": [
+                "${workspaceFolder}/**",
+                "${env:R_HOME}/include",
+            ],
+```
+this helps intellisense, linter and everything link up nicely.
+
+Also, note `R_NO_REMAP` in the defines section of `c_cpp_properties.json`.
+This makes sure that R-functions in C are prefixed with `Rf_`.
 
 ## `vscode` workflow
 
