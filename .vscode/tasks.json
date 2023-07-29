@@ -1,0 +1,27 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "R CMD SHLIB",
+            "type": "shell",
+            "command": "R",
+            "isBackground": true,
+            "group": "build",
+            "args": [
+                "CMD",
+                "SHLIB",
+                "--use-C23",
+                "${relativeFile}"
+            ],
+            "problemMatcher": "$gcc",
+            "options": {
+                // "shell": {
+                // //TODO: add Rtools' terminal here instead
+                //     "executable": "cmd"
+                // }
+            }
+        }
+    ]
+}

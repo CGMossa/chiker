@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.win": "makefile",
+        "*.in": "makefile",
+        "rinternals.h": "c",
+        "r.h": "c"
+    }
+}
