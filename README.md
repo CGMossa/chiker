@@ -1,5 +1,7 @@
 # `chiker`
 
+This repository is to showcase extending R with some C code that uses R's C-facilities.
+
 Package origins:
 
 ```r
@@ -32,6 +34,8 @@ VS Marketplace Link: <https://marketplace.visualstudio.com/items?itemName=ms-vsc
 where I fill in my personal setting. Note where this is different in the file.
 
 ## `vscode` workflow
+
+It is required that `R` is available in `PATH`.
 
 In `.vscode/tasks.json`, there is a task that uses `R CMD SHLIB` to build the
 current file into a library. It also takes all `gcc` errors and puts them
