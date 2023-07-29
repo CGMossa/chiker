@@ -1,14 +1,10 @@
 {
-    "env": {
-        // EDIT THIS
-        "R_HOME": "C:/Users/Kevin/scoop/apps/r/current"
-    },
     "configurations": [
         {
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${env:R_HOME}/include",
+                "${config:R_HOME}/include",
             ],
             "defines": [
                 "_DEBUG",

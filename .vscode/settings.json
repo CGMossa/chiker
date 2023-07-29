@@ -1,4 +1,6 @@
 {
+    // EDIT THIS
+    "R_HOME": "C:/Users/Kevin/scoop/apps/r/current",
     "files.associations": {
         "*.win": "makefile",
         "*.in": "makefile",

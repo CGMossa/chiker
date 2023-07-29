@@ -22,6 +22,25 @@
                 //     "executable": "cmd"
                 // }
             }
+        },
+        {
+            "label": "Open R headers (workspace)",
+            "type": "shell",
+            "command": "code",
+            "args": [
+                "${config:R_HOME}/include"
+            ],
+            "group": "none",
+            "presentation": {
+                "echo": false,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": false
+            },
+            "isBackground": true,
+            "problemMatcher": [],
         }
     ]
 }
