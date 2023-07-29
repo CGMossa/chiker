@@ -30,3 +30,10 @@ VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=ms-vsco
 ```
 
 where I fill in my personal setting. Note where this is different in the file.
+
+## `vscode` workflow
+
+In `.vscode/tasks.json`, there is a task that uses `R CMD SHLIB` to build the
+current file into a library. It also takes all `gcc` errors and puts them
+in the problems section. Thus, press Ctrl+SHIFT+<kbd>B</kbd> after editting.
+
