@@ -4,7 +4,7 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${config:R_HOME}/include",
+                "${config:R.CMD.config.R_HOME}/include"
             ],
             "defines": [
                 "_DEBUG",
@@ -15,10 +15,14 @@
                 "R_NO_REMAP_RMATH"
             ],
             "windowsSdkVersion": "10.0.22000.0",
-            "compilerPath": "cl.exe",
-            "cStandard": "c17",
-            "cppStandard": "c++17",
-            "intelliSenseMode": "windows-msvc-x64"
+            "compilerArgs": [
+                "${config:R.CMD.config.cppflags}",
+                "${config:R.CMD.config.ldflags}"
+            ],
+            "compilerPath": "${config:R.CMD.config.r_tools_soft}/bin/gcc",
+            "cStandard": "c23",
+            "cppStandard": "c++23",
+            "intelliSenseMode": "windows-gcc-x64"
         }
     ],
     "version": 4

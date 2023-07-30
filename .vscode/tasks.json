@@ -41,6 +41,28 @@
             },
             "isBackground": true,
             "problemMatcher": [],
+        },
+        {
+            "label": "R CMD config",
+            "type": "shell",
+            "group": "none",
+            "command": "R CMD config --${input:r_cmd_config_option}",
+            "problemMatcher": [],
         }
+    ],
+    "inputs": [
+        {
+            "id": "r_cmd_config_option",
+            "type": "pickString",
+            "description": "Options",
+            "options": [
+                "help",
+                "version",
+                "cppflags",
+                "ldflags",
+                "all",
+            ],
+            "default": "all"
+        },
     ]
 }
