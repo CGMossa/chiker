@@ -1,4 +1,6 @@
+#define STRICT_R_HEADERS
 #define R_NO_REMAP
+#define R_NO_REMAP_RMATH
 
 #include <R.h>
 #include <Rinternals.h>
