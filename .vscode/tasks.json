@@ -54,14 +54,17 @@
             "args": [
                 // since `cwd` doesn't work
                 "-B${config:R.CMD.config.r_tools_soft}/bin",
+                // "${config:R.CMD.config.cppflags}",
                 // 
                 "-IC:/Users/Kevin/scoop/apps/r/current/include",
                 "-IC:/Users/Kevin/scoop/apps/r/current/include/x64",
                 // ],
                 // these don't work...
                 "-fdiagnostics-color=always",
-                "${config:R.CMD.config.cppflags}",
-                "${config:R.CMD.config.ldflags}",
+                // "${config:R.CMD.config.ldflags}",
+                "-LC:/Users/Kevin/scoop/apps/r/current/bin/x64",
+                "-lR",
+                "-lm",
                 //C23FLAGS = -O2 -Wall -std=gnu2x -mfpmath=sse -msse2 -mstackrealign
                 "-O2",
                 "-Wall",
@@ -79,6 +82,13 @@
             "problemMatcher": [
                 "$gcc"
             ]
+        },
+        {
+            "label": "Run current embedded R file",
+            "type": "shell",
+            "command": "${fileDirname}/${fileBasenameNoExtension}.exe",
+            "problemMatcher": [],
+            "dependsOn": "C/C++: Rtools' gcc build active file"
         }
     ],
     "inputs": [
