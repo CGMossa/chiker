@@ -42,6 +42,8 @@
             "isBackground": true,
             "problemMatcher": [],
         },
+        // this is not needed, but showcases how to retrieve information from
+        // `R CMD config`.
         {
             "label": "R CMD config",
             "type": "shell",
