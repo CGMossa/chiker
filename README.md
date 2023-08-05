@@ -54,3 +54,11 @@ in the problems section. Thus,
 press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> after editting.
 
 To explore R's C-headers, there is a task `Open R headers (workspace)`.
+
+## Materials
+
+* Import functionality from a custom C code: [notebooks/001_shlib.R](R script);
+
+This is if you want a standalone R script that compiles, loads, runs and
+unloads a DLL all in one. These steps are embedded in package building,
+so you don't have to do them yourself.
